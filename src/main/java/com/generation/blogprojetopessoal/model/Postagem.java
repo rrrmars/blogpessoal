@@ -1,7 +1,7 @@
 package com.generation.blogprojetopessoal.model;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
+
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -23,12 +23,12 @@ public class Postagem {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@NotBlank(message = "O tributo título é obrigatório.")
+	@NotBlank(message = "O atributo título é obrigatório.")
 	@Size(min = 5, max = 100)
 	private String titulo;
 	
 	
-	@NotNull(message = "O tributo texto é obrigatório.")
+	@NotNull(message = "O atributo texto é obrigatório.")
 	@Size(min = 10, max = 1000)
 	private String texto;
 	
