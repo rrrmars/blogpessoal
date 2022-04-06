@@ -13,10 +13,10 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.generation.blogprojetopessoal.model.Postagem;
+
 @Entity
 @Table(name = "tb_temas")
-public class Tema{
+public class Tema {
 	    
 	    @Id	
 		@GeneratedValue(strategy = GenerationType.IDENTITY)
